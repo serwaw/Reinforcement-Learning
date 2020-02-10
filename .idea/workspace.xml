@@ -3,21 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2776595d-2b28-4ce7-8282-ae7257225580" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../CliffWalking/side_effect_sokoban.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliff_walk/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliff_walk/cliff_walking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning/cliffwalk_qlearning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning/cliffwalking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning/cliffwalking_learning_plot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning/q_learn_sol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning/q_learning_state.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_q/gym_q.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_safety_gridworlds/distributional_shift_gym.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai_safety_gridworlds/distributional_shift_gym.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_safety_gridworlds/wrappers_gridworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai_safety_gridworlds/wrappers_gridworld.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning/q_learning_sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning/q_learning_sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning/q_learning_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning/q_learning_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/safe_grid_gym/gym_interface/envs/gridworlds_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/safe_grid_gym/gym_interface/envs/gridworlds_env.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,10 +46,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/q_learning/q_learning_solution.py">
+        <entry file="file://$PROJECT_DIR$/q_learning/q_learning_sokoban.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+            <state relative-caret-position="420">
+              <caret line="28" column="73" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -128,7 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environment/shared/rl/pycolab_interface.py" />
         <option value="$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environment/shared/safety_ui.py" />
         <option value="$PROJECT_DIR$/ai_safety_gridworlds/__init__.py" />
         <option value="$PROJECT_DIR$/q_learning/plotting.py" />
@@ -179,6 +163,7 @@
         <option value="$PROJECT_DIR$/safe_grid_gym/gym_interface/envs/gridworlds_env.py" />
         <option value="$PROJECT_DIR$/test_q/gym_q.py" />
         <option value="$PROJECT_DIR$/q_learning/q_learning_solution.py" />
+        <option value="$PROJECT_DIR$/q_learning/__init__.py" />
       </list>
     </option>
   </component>
@@ -250,7 +235,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/q_learning/q_learning_solution.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/q_learning/q_learning_cliffwalk.py" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -266,7 +251,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="q_learning_sokoban" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="q_learning_cliffwalk" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -278,7 +263,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/q_learning/q_learning_sokoban.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/q_learning/q_learning_cliffwalk.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -303,7 +288,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="2560" height="1378" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.100946374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -325,7 +309,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/safe-grid-gym/safe-grid/envs/gridworlds_env.py" />
     <entry file="file://$PROJECT_DIR$/safe_grid_gym/gym_interface/viewer/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -641,10 +624,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/q_learning/q_learning_solution.py">
+    <entry file="file://$PROJECT_DIR$/q_learning/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q_learning/q_learning_sokoban.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+        <state relative-caret-position="420">
+          <caret line="28" column="73" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
