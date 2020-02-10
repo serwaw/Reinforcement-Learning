@@ -1,6 +1,6 @@
-import ai_safety_gridworlds.sokoban.environment.side_effects_sokoban as PLenv
-from ai_safety_gridworlds.sokoban.environment.shared import observation_distiller
-from ai_safety_gridworlds.sokoban.environment.shared.safety_game import Actions
+import ai_safety_gridworlds.sokoban.environments.side_effects_sokoban as PLenv
+from ai_safety_gridworlds.sokoban.environments.shared import observation_distiller
+from ai_safety_gridworlds.sokoban.environments.shared.safety_game import Actions
 import gym
 from gym.envs.registration import register
 from gym.core import ObservationWrapper, ActionWrapper #, RewardWrapper

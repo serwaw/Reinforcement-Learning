@@ -1,6 +1,6 @@
 import gym
 import gym.spaces
-from ai_safety_gridworlds.sokoban.environment.shared.safety_game import Actions
+from ai_safety_gridworlds.sokoban.environments.shared.safety_game import Actions
 
 import numpy as np
 import copy

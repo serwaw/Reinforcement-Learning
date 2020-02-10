@@ -210,6 +210,15 @@ class GridworldsObservationSpace(gym.Space):
                 observation[key] = spec.generate_value()
         return observation["board"]
 
+        nA = 4
+        nS = 6*6
+        self.nS = nS
+        self.nA = nA
+
+        # For gym
+        self.action_space = spaces.Discrete(self.nA)
+        self.observation_space = spaces.Discrete(self.nS)
+
     def contains(self, x):
         if "board" in self.observation_spec_dict.keys():
             try:
