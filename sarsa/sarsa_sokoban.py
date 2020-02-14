@@ -14,7 +14,7 @@ from collections import defaultdict
 from safe_grid_gym.gym_interface.envs.gridworlds_env import GridworldEnv
 from ai_safety_gridworlds.distributional_shift_gym import SideEffectsSokobanEnv
 from q_learning import plotting
-from q_learning.q_learning_sokoban import q_learning
+#from q_learning.q_learning_sokoban import q_learning
 
 matplotlib.style.use('ggplot')
 
@@ -71,6 +71,8 @@ def sarsa(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
     stats = plotting.EpisodeStats(
         episode_lengths=np.zeros(num_episodes),
         episode_rewards=np.zeros(num_episodes))
+
+
 
     # The policy we're following
     policy = make_epsilon_greedy_policy(Q, epsilon, env.action_space.n)
@@ -137,6 +139,5 @@ def sarsa(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
     return Q, stats
 
 Q, stats = sarsa(env, 500)
-Q, stats = q_learning(env, 500)
 
-plotting.plot_episode_stats(stats)
+#plotting.plot_episode_stats(stats)

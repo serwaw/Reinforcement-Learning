@@ -12,7 +12,7 @@ if "../" not in sys.path:
 from collections import defaultdict
 from cliff_walk.cliff_walking import CliffWalkingEnv
 from q_learning import plotting
-from q_learning.q_learning_cliffwalk import q_learning
+#from q_learning.q_learning_cliffwalk import q_learning
 
 matplotlib.style.use('ggplot')
 
@@ -111,6 +111,6 @@ def sarsa(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
     return Q, stats
 
 Q, stats = sarsa(env, 500)
-Q, stats = q_learning(env, 500)
+#Q, stats = q_learning(env, 500)
 
-plotting.plot_episode_stats(stats)
+#plotting.plot_episode_stats(stats)

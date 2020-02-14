@@ -5,6 +5,7 @@ import matplotlib
 import numpy as np
 import pandas as pd
 import sys
+import matplotlib.pyplot as plt
 
 
 if "../" not in sys.path:
@@ -67,9 +68,12 @@ def q_learning(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
     Q = defaultdict(lambda: np.zeros(env.action_space.n))
 
     # Keeps track of useful statistics
-    stats = plotting.EpisodeStats(
-        episode_lengths=np.zeros(num_episodes),
-        episode_rewards=np.zeros(num_episodes))
+    # stats = plotting.EpisodeStats(
+    #     episode_lengths=np.zeros(num_episodes),
+    #     episode_rewards=np.zeros(num_episodes))
+
+    episode_lengths = np.zeros(num_episodes)
+    episode_rewards = np.zeros(num_episodes)
 
     # The policy we're following
     policy = make_epsilon_greedy_policy(Q, epsilon, env.action_space.n)
@@ -92,9 +96,12 @@ def q_learning(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
             action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
             next_state, reward, done, _ = env.step(action)
 
-            # Update statistics
-            stats.episode_rewards[i_episode] += reward
-            stats.episode_lengths[i_episode] = t
+            # # Update statistics
+            # stats.episode_rewards[i_episode] += reward
+            # stats.episode_lengths[i_episode] = t
+
+            episode_lengths[i_episode] += reward
+            episode_rewards[i_episode] = t
 
             # TD Update
             best_next_action = np.argmax(Q[next_state])
@@ -107,8 +114,11 @@ def q_learning(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
 
             state = next_state
 
-    return Q, stats
+    return Q, episode_rewards, episode_lengths
 
-Q, stats = q_learning(env, 500)
 
-plotting.plot_episode_stats(stats)
+Q, episode_rewards, episode_rewards = q_learning(env, 500)
+
+#plotting.plot_episode_stats(stats)
+# plt.plot(episode_rewards)
+# plt.show()

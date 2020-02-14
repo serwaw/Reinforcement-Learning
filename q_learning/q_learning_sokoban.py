@@ -39,7 +39,6 @@ def make_epsilon_greedy_policy(Q, epsilon, nA):
 
     def policy_fn(observation):
         A = np.ones(nA, dtype=float) * epsilon / nA
-        print("ny", observation)
 
         # #Finds where the agent is(2), use this for sokoban
         # obs=np.where(observation == 2)
@@ -109,7 +108,7 @@ def q_learning(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
         state_agent_con = np.concatenate((state_find_agent)).tolist()
         print(state_agent_con)
 
-        # Converts it to a int number, use this one for sokoban
+        # Converts it to a int number, use this for sokoban
         state_to_int = int(''.join(map(str, state_agent_con)))
         print(state_to_int)
 
@@ -154,4 +153,4 @@ def q_learning(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
     return Q, stats
 
 Q, stats = q_learning(env, 500)
-plotting.plot_episode_stats(stats)
+#plotting.plot_episode_stats(stats)
