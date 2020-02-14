@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2776595d-2b28-4ce7-8282-ae7257225580" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../CliffWalking/side_effect_sokoban.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliff_walk/cliff_walking.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliff_walk/cliff_walking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning/plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning/q_learning_cliffwalk.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning/q_learning_cliffwalk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning/q_learning_sokoban.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning/q_learning_sokoban.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sarsa/sarsa_cliffwalk.py" beforeDir="false" afterPath="$PROJECT_DIR$/sarsa/sarsa_cliffwalk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sarsa/sarsa_sokoban.py" beforeDir="false" afterPath="$PROJECT_DIR$/sarsa/sarsa_sokoban.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/make_plots_cliff.py" beforeDir="false" afterPath="$PROJECT_DIR$/plots/make_plots_cliff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/make_plots_sokoban.py" beforeDir="false" afterPath="$PROJECT_DIR$/plots/make_plots_sokoban.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,18 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environments/shared/safety_game.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
-              <caret line="177" column="45" selection-start-line="177" selection-start-column="39" selection-end-line="177" selection-end-column="45" />
-              <folding>
-                <element signature="e#49#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sarsa/sarsa_cliffwalk.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/q_learning/q_learning_sokoban.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="72" />
+            <state relative-caret-position="561">
+              <caret line="144" column="58" lean-forward="true" selection-start-line="144" selection-start-column="58" selection-end-line="144" selection-end-column="58" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -79,17 +62,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plots/make_plots_cliff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1905">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="615">
+              <caret line="206" column="31" lean-forward="true" selection-start-line="206" selection-start-column="31" selection-end-line="206" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/make_plots_sokoban.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="202" column="4" selection-start-line="202" selection-start-column="4" selection-end-line="202" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/make_plots_compare_qlearning.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="106" selection-start-line="106" selection-end-line="106" selection-end-column="84" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plots/make_plots_sokoban.py">
+        <entry file="file://$PROJECT_DIR$/plots/make_plots_compare_sarsa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="222" column="41" lean-forward="true" selection-start-line="222" selection-start-column="41" selection-end-line="222" selection-end-column="41" />
+            <state relative-caret-position="610">
+              <caret line="216" column="14" lean-forward="true" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -158,8 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ai_safety_gridworlds/sokoban/helpers/__init__.py" />
-        <option value="$PROJECT_DIR$/safe-grid-gym/safe-grid/envs/gridworlds_env.py" />
         <option value="$PROJECT_DIR$/safe_grid_gym/gym_interface/__init__.py" />
         <option value="$PROJECT_DIR$/safe_grid_gym/gym_interface/viewer/__init__.py" />
         <option value="$PROJECT_DIR$/safe_grid_gym/gym_interface/viewer/agent_viewer.py" />
@@ -207,8 +215,10 @@
         <option value="$PROJECT_DIR$/q_learning/q_learning_sokoban.py" />
         <option value="$PROJECT_DIR$/q_learning/q_learning_cliffwalk.py" />
         <option value="$PROJECT_DIR$/plots/make_plots.py" />
-        <option value="$PROJECT_DIR$/plots/make_plots_cliff.py" />
+        <option value="$PROJECT_DIR$/plots/make_plots_compare.py" />
+        <option value="$PROJECT_DIR$/plots/make_plots_compare_sarsa.py" />
         <option value="$PROJECT_DIR$/plots/make_plots_sokoban.py" />
+        <option value="$PROJECT_DIR$/plots/make_plots_cliff.py" />
       </list>
     </option>
   </component>
@@ -246,66 +256,7 @@
             <path>
               <item name="RL" type="b2602c69:ProjectViewProjectNode" />
               <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="ai_safety_gridworlds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="ai_safety_gridworlds" type="462c0819:PsiDirectoryNode" />
-              <item name="sokoban" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="ai_safety_gridworlds" type="462c0819:PsiDirectoryNode" />
-              <item name="sokoban" type="462c0819:PsiDirectoryNode" />
-              <item name="environments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="ai_safety_gridworlds" type="462c0819:PsiDirectoryNode" />
-              <item name="sokoban" type="462c0819:PsiDirectoryNode" />
-              <item name="environments" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="cliff_walk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
               <item name="plots" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="q_learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="safe_grid_gym" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="safe_grid_gym" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="safe_grid_gym" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_interface" type="462c0819:PsiDirectoryNode" />
-              <item name="envs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="sarsa" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -315,7 +266,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/plots/make_plots_sokoban.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/plots/make_plots_compare_sarsa.py" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -331,7 +282,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="make_plots_sokoban" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="make_plots_compare_sarsa" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -343,7 +294,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plots/make_plots_sokoban.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plots/make_plots_compare_sarsa.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -370,7 +321,7 @@
     <frame x="0" y="28" width="2560" height="1378" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.100946374" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.100946374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
@@ -379,7 +330,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32983023" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.34357315" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4996057" visible="true" weight="0.2918351" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4996057" visible="true" weight="0.2918351" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3992126" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -390,8 +341,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environment/shared/observation_distiller.py" />
-    <entry file="file://$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environment/shared/safety_game.py" />
     <entry file="file://$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environment/shared/__init__.py" />
     <entry file="file://$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environments/shared/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -649,39 +598,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/q_learning/q_learning_cliffwalk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding>
-            <element signature="e#1#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/q_learning/plotting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="47" selection-start-line="47" selection-end-line="58" selection-end-column="15" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plots/make_plots_cliff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1905">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/q_learning/q_learning_sokoban.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -696,10 +618,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/q_learning/q_learning_sokoban.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="144" column="58" lean-forward="true" selection-start-line="144" selection-start-column="58" selection-end-line="144" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q_learning/q_learning_cliffwalk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/make_plots_compare_qlearning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="106" selection-start-line="106" selection-end-line="106" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plots/make_plots_sokoban.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="222" column="41" lean-forward="true" selection-start-line="222" selection-start-column="41" selection-end-line="222" selection-end-column="41" />
+        <state relative-caret-position="355">
+          <caret line="202" column="4" selection-start-line="202" selection-start-column="4" selection-end-line="202" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/make_plots_cliff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="206" column="31" lean-forward="true" selection-start-line="206" selection-start-column="31" selection-end-line="206" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/make_plots_compare_sarsa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="216" column="14" lean-forward="true" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
