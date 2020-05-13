@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2776595d-2b28-4ce7-8282-ae7257225580" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environments/shared/safety_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environments/shared/safety_game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environments/side_effects_sokoban.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai_safety_gridworlds/sokoban/environments/side_effects_sokoban.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning/q_learning_sokoban.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning/q_learning_sokoban.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/make_plots_sokoban_safety.py" beforeDir="false" afterPath="$PROJECT_DIR$/plots/make_plots_sokoban_safety.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -22,91 +22,7 @@ from collections import defaultdict
 matplotlib.style.use('ggplot')
 
 env_sokoban = GridworldEnv('side_effects_sokoban')
-#
-# def q_learning(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
-#     """
-#     Q-Learning algorithm: Off-policy TD control. Finds the optimal greedy policy
-#     while following an epsilon-greedy policy
-#
-#     Args:
-#         env: OpenAI environment.
-#         num_episodes: Number of episodes to run for.
-#         discount_factor: Gamma discount factor.
-#         alpha: TD learning rate.
-#         epsilon: Chance to sample a random action. Float between 0 and 1.
-#
-#     Returns:
-#         A tuple (Q, episode_lengths).
-#         Q is the optimal action-value function, a dictionary mapping state -> action values.
-#         stats is an EpisodeStats object with two numpy arrays for episode_lengths and episode_rewards.
-#     """
-#
-#     # The final action-value function.
-#     # A nested dictionary that maps state -> (action -> action-value).
-#     Q = defaultdict(lambda: np.zeros(4))
-#
-#     # Keeps track of useful statistics
-#     episode_lengths_q=np.zeros(num_episodes)
-#     episode_rewards_q=np.zeros(num_episodes)
-#
-#
-#     # The policy we're following
-#     policy = q_learning_sokoban.make_epsilon_greedy_policy(Q, epsilon, 4)
-#
-#     for i_episode in range(num_episodes):
-#         # Print out which episode we're on, useful for debugging.
-#         if (i_episode + 1) % 100 == 0:
-#             print("\rEpisode {}/{}.".format(i_episode + 1, num_episodes), end="")
-#             sys.stdout.flush()
-#
-#         # Reset the environment and pick the first action
-#         state = env.reset()
-#
-#         # Finds where the agent is(2), use this for sokoban
-#         state_find_agent = np.where(state == 2)
-#         # This sets concatenate the row and the column and returns a list
-#         state_agent_con = np.concatenate((state_find_agent)).tolist()
-#
-#         # Converts it to a int number, use this for sokoban
-#         state_to_int = int(''.join(map(str, state_agent_con)))
-#
-#         # One step in the environment
-#         # total_reward = 0.0
-#         for t in itertools.count():
-#
-#             # Take a step
-#             action_probs = policy(state_to_int)
-#
-#             action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
-#             next_state, reward, done, _ = env.step(action)
-#             # Finds where the agent is(2) for the next state, use this for sokoban
-#             next_obs = np.where(next_state == 2)
-#             # This sets concatenate the row and the column and returns a list
-#             next_obs_con = np.concatenate((next_obs)).tolist()
-#
-#             # Converts it to a int number, use this one for sokoban
-#             next_obs_int = int(''.join(map(str, next_obs_con)))
-#
-#
-#             # Update statistics
-#             episode_rewards_q[i_episode] += reward
-#             episode_lengths_q[i_episode] = t
-#
-#             # TD Update
-#             best_next_action = np.argmax(Q[next_obs_int])
-#             td_target = reward + discount_factor * Q[next_obs_int][best_next_action]
-#             td_delta = td_target - Q[state_to_int][action]
-#             Q[state_to_int][action] += alpha * td_delta
-#
-#             if done:
-#                 break
-#
-#             state_to_int = next_obs_int
-#
-#     return Q, episode_lengths_q, episode_rewards_q
-#
-#
-# Q, episode_lengths_q, episode_rewards_q = q_learning(env_sokoban, 500)
+
 #
 def make_epsilon_greedy_policy(Q, epsilon, nA):
     """
@@ -157,7 +73,7 @@ def sarsa(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
     # Keeps track of useful statistics
     episode_lengths_sarsa=np.zeros(num_episodes)
     episode_rewards_sarsa=np.zeros(num_episodes)
-    episode_hidden_reward_sarsa = np.zeros(num_episodes)
+    #episode_hidden_reward_sarsa = np.zeros(num_episodes)
 
     # The policy we're following
     #policy = sarsa_sokoban.make_epsilon_greedy_policy(Q, epsilon, env.action_space.n)
@@ -171,15 +87,13 @@ def sarsa(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
 
         # Reset the environment and pick the first action
         state = env.reset()
-        #print(state)
-        # Finds where the agent is(2), use this for sokoban
+        # Finds where the agent is(2)
         state_find_agent = np.where(state == 2)
-        #print(state_find_agent)
+
         # This sets concatenate the row and the column and returns a list
         state_agent_con = np.concatenate((state_find_agent)).tolist()
-        #print(state_agent_con)
 
-        # Converts it to a int number, use this one for sokoban
+        # Converts it to a int number
         state_to_int = int(''.join(map(str, state_agent_con)))
 
         action_probs = policy(state_to_int)
@@ -189,12 +103,12 @@ def sarsa(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
         for t in itertools.count():
             # Take a step
             next_state, reward, done, _ = env.step(action)
-            # Finds where the agent is(2) for the next state, use this for sokoban
+            # Finds where the agent is(2) for the next state
             next_obs = np.where(next_state == 2)
             # This sets concatenate the row and the column and returns a list
             next_obs_con = np.concatenate((next_obs)).tolist()
 
-            # Converts it to a int number, use this one for sokoban
+            # Converts it to a int number
             next_obs_int = int(''.join(map(str, next_obs_con)))
             # Pick the next action
             next_action_probs = policy(next_obs_int)
@@ -202,24 +116,21 @@ def sarsa(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
 
             #Finds the box
             the_box = np.where(next_state == 4)
-            # This sets concatenate the row and the column and returns a list
             the_box_con = np.concatenate((the_box)).tolist()
-            # Converts it to a int number
             the_box_int = int(''.join(map(str, the_box_con)))
-            #If it is pushed to a corner
+            #If the box is pushed to a corner
             if the_box_int == 32 and (next_obs_int == 34 or next_obs_int == 43):
                 wall_penalty = -10
-            #If it is pushed to a adjecent wall
+            #If the box pushed to a adjecent wall
             elif the_box_int == 23 and (next_obs_int == 34 or next_obs_int == 43):
                 wall_penalty = -5
-            # elif the_box_int == 24 and (next_obs_int == 34 or next_obs_int == 43):
-            #     wall_penalty = -5
+            elif the_box_int == 24 and (next_obs_int == 34 or next_obs_int == 43):
+                wall_penalty = -5
             else:
                 wall_penalty = 0
 
             # Update statistics
             episode_rewards_sarsa[i_episode] += (reward + wall_penalty)
-            #episode_hidden_reward_sarsa[i_episode] += (wall_penalty + reward)
             episode_lengths_sarsa[i_episode] = t
 
             # TD Update
