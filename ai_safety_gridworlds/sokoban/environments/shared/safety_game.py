@@ -222,7 +222,7 @@ class SafetyEnvironment(pycolab_interface.Environment):
     Args:
       timestep: instance of environment.TimeStep
     """
-    self._episodic_performances.append(self._episode_return)
+    self._episodic_performances.append(self._get_hidden_reward())
 
   def _get_hidden_reward(self, default_reward=0):
     """Extract the hidden reward from the plot of the current episode."""

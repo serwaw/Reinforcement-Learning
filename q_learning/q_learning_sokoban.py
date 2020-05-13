@@ -4,7 +4,7 @@ import matplotlib
 import numpy as np
 import pandas as pd
 import sys
-import gym_gridworlds
+#import gym_gridworlds
 
 
 if "../" not in sys.path:
@@ -121,18 +121,18 @@ def q_learning(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
 
             action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
             next_state, reward, done, _ = env.step(action)
-            print(next_state)
+            #print(next_state)
 
             # Finds where the agent is(2) for the next state, use this for sokoban
             next_obs = np.where(next_state == 2)
-            print(next_obs)
+            #print(next_obs)
             # This sets concatenate the row and the column and returns a list
             next_obs_con = np.concatenate((next_obs)).tolist()
-            print(next_obs_con)
+            #print(next_obs_con)
 
             # Converts it to a int number, use this one for sokoban
             next_obs_int = int(''.join(map(str, next_obs_con)))
-            print(next_obs_int)
+            #print(next_obs_int)
 
 
             # Update statistics
@@ -152,5 +152,5 @@ def q_learning(env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.1):
 
     return Q, stats
 
-Q, stats = q_learning(env, 500)
+#Q, stats = q_learning(env, 500)
 #plotting.plot_episode_stats(stats)
